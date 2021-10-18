@@ -14,6 +14,25 @@ ______________________________________
 
 int Ex4(int arr[], int n){
 	//Your codes here
+	for(int i=0;i<n-2;i++){
+			if (arr[i]<arr[i+1]) {
+				if (arr[i+1]>arr[i+2]) {
+					return 0;
+					break;
+				}
+				else
+					return 1; 
+			}
+			else
+			if (arr[i]>arr[i+1]) {
+				if (arr[i+1]<arr[i+2]) {
+					return 0;
+					break;
+				}
+				else
+					return -1; 
+			}
+	}
 	
 }
 
@@ -24,7 +43,7 @@ int main(int argc, char *argv[]) {
 	for(i=0; i<argc;i++){
 		testcase[i] = atoi(argv[i+1]);
 	}
-	
+
 	printf("%d", Ex4(testcase, argc));
 
 	return 0;

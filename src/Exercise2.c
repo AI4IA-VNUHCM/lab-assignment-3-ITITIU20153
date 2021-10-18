@@ -14,7 +14,17 @@ Ex:
 
 void Ex2(int arr[], int n){
 	//Your codes here
-	
+	int count;
+	for (int i=0;i<=(n-1)/2;i++) 
+	{
+		for (int j=n-1;j>(n-1)/20;j--) {
+				if  (arr[i] % 2 ==0 && arr[j] % 2 ==0)
+		{ 
+					printf("%d",arr[i]);
+		}
+		}
+	}
+
 }
 
 int main(int argc, char *argv[]) {

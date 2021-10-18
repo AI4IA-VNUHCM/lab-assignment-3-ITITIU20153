@@ -14,7 +14,15 @@ Ex:
 
 void Ex1(int arr[], int n){
 	//Your codes here
-    
+	int m=n-1,check;	
+		for (int j=n/2,i=0;m>=j,i<=(n-1)/2;m--,i++) {
+			if (arr[i]!=arr[m])
+				check =0;
+				else	check=1;
+			 }
+	if (check==0)
+	printf(" not symmetric ");
+	else printf(" symmetric");
 }
 
 int main(int argc, char *argv[]) {

@@ -14,7 +14,12 @@ Ex:
 
 void Ex3(int in_arr[], int n){
 	//Your codes here
-	
+	for(int i=0,count,j=1;j,i<=n-1;i++,j++){
+			if (in_arr[i]<in_arr[j])
+			{
+					printf("%d %d",in_arr[i]);
+			}
+	}
 }
 
 int main(int argc, char *argv[]) {
